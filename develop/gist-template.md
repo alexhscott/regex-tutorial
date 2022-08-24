@@ -10,10 +10,15 @@ This tutorial describes the regex, or sequence of characters that defines the sp
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
+- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
+- [flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy Match](#greedy-match)
+- [Greedy and Lazy Match](#greedy-match)
+- [Boundaries](#boundaries)
+- [Back-references](#back-references)
+- [Look-ahead and Look-behind](#look)
 
 ## Regex Components
 Components of a regex matching a URL include:
@@ -67,7 +72,11 @@ An escaped ```\/``` and ```?``` quantifier then follows the fourth capturing gro
 ### Bracket Expressions
 The bracket metacharacter ```[]``` is a character set, and matches a string that has any character or combination of characters within the character set, for example, ```[jkl]``` matches a string that has a __j__, or __j k__, or __jl__. It is also the same as ```j|k|l```, or ```[j-l]```.
 
-### Greedy Match
+### Greedy and Lazy Match
 The quantifier metacharacters ```*``` ```+``` and ```{}``` are greedy operators which expand the match as far as possible through the string. For example, ```<.+>``` matches this entire string ```<div>A div with divs in a div</div>```.
 
 The URL regex uses the all of these metacharacters to quantify the number of matches of a particular string.
+
+## Author
+
+Alex Scott | [GitHub](github.com/alexhscott/)
